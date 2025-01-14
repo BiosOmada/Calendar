@@ -1,0 +1,457 @@
+{
+  "world leprosy day": {
+    "month": "January",
+    "from": "30",
+    "to": "30"
+  },
+  "Cervical Health Awareness Month": {
+    "month": "January",
+    "from": "1",
+    "to": "31"
+  },
+  "thyroid awareness month": {
+    "month": "January",
+    "from": "1",
+    "to": "31"
+  },
+  "Rheumatoid arthritis": {
+    "month": "February",
+    "from": "2",
+    "to": "2"
+  },
+  "World Cancer Day": {
+    "month": "February",
+    "from": "4",
+    "to": "4"
+  },
+  "World anemia awareness day": {
+    "month": "February",
+    "from": "13",
+    "to": "13"
+  },
+  "international childhood cancer awareness day": {
+    "month": "February",
+    "from": "15",
+    "to": "15"
+  },
+  "rare disease day": {
+    "month": "February",
+    "from": "29",
+    "to": "29"
+  },
+  "world hearing day": {
+    "month": "March",
+    "from": "3",
+    "to": "3"
+  },
+  "world glaucoma week": {
+    "month": "March",
+    "from": "10",
+    "to": "16"
+  },
+  "World Kidney Day": {
+    "month": "March",
+    "from": "2nd Thursday",
+    "to": "2nd Thursday"
+  },
+  "world TB day": {
+    "month": "March",
+    "from": "24",
+    "to": "24"
+  },
+  "Brain Injury Awareness Month": {
+    "month": "March",
+    "from": "1",
+    "to": "31"
+  },
+  "Blood Disorder Awareness Month": {
+    "month": "March",
+    "from": "1",
+    "to": "31"
+  },
+  "Colorectal Cancer Awareness Month": {
+    "month": "March",
+    "from": "1",
+    "to": "31"
+  },
+  "Kidney Cancer Awareness Month": {
+    "month": "March",
+    "from": "1",
+    "to": "31"
+  },
+  "Multiple Myeloma Awareness Month": {
+    "month": "March",
+    "from": "1",
+    "to": "31"
+  },
+  "Cerebral Palsy Awareness Month": {
+    "month": "March",
+    "from": "1",
+    "to": "31"
+  },
+  "Multiple Sclerosis Awareness Month": {
+    "month": "March",
+    "from": "1",
+    "to": "31"
+  },
+  "oral, head and neck awareness week": {
+    "month": "April",
+    "from": "16",
+    "to": "22"
+  },
+  "world hemophilia day": {
+    "month": "April",
+    "from": "17",
+    "to": "17"
+  },
+  "world immunization week": {
+    "month": "April",
+    "from": "24",
+    "to": "30"
+  },
+  "world malaria day": {
+    "month": "April",
+    "from": "25",
+    "to": "25"
+  },
+  "Parkinson's Disease Awareness Month": {
+    "month": "April",
+    "from": "1",
+    "to": "30"
+  },
+  "Esophageal Cancer Awareness Month": {
+    "month": "April",
+    "from": "1",
+    "to": "30"
+  },
+  "Testicular Cancer Awareness Month": {
+    "month": "April",
+    "from": "1",
+    "to": "30"
+  },
+  "Oral, Head and Neck Cancer Awareness Month": {
+    "month": "April",
+    "from": "1",
+    "to": "30"
+  },
+  "Systemic lupus erythematosus (lupus)": {
+    "month": "May",
+    "from": "10",
+    "to": "10"
+  },
+  "autoimune and autoinflammatory arthritis disease day": {
+    "month": "May",
+    "from": "20",
+    "to": "20"
+  },
+  "World Myopia Week": {
+    "month": "May",
+    "from": "23",
+    "to": "28"
+  },
+  "Multiple sclerosis day": {
+    "month": "May",
+    "from": "30",
+    "to": "30"
+  },
+  "world no tobacco day": {
+    "month": "May",
+    "from": "31",
+    "to": "31"
+  },
+  "National Arthritis Month": {
+    "month": "May",
+    "from": "1",
+    "to": "31"
+  },
+  "Asthma and Food Allergy Awareness Month": {
+    "month": "May",
+    "from": "1",
+    "to": "31"
+  },
+  "Brain Cancer/Tumor Action Month": {
+    "month": "May",
+    "from": "1",
+    "to": "31"
+  },
+  "Osteoporosis Awareness & Prevention Month": {
+    "month": "May",
+    "from": "1",
+    "to": "31"
+  },
+  "Melanoma Skin Cancer Awareness Month": {
+    "month": "May",
+    "from": "1",
+    "to": "31"
+  },
+  "Lupus Awareness Month": {
+    "month": "May",
+    "from": "1",
+    "to": "31"
+  },
+  "Stroke Awareness Month": {
+    "month": "May",
+    "from": "1",
+    "to": "31"
+  },
+  "Crohn's Disease & Colitis Awareness Month": {
+    "month": "May",
+    "from": "1",
+    "to": "31"
+  },
+  "Bladder Cancer Awareness Month": {
+    "month": "May",
+    "from": "1",
+    "to": "31"
+  },
+  "Tuberous Sclerosis Awareness Month": {
+    "month": "May",
+    "from": "1",
+    "to": "31"
+  },
+  "Celiac Disease Awareness Month": {
+    "month": "May",
+    "from": "1",
+    "to": "31"
+  },
+  "World Transplant Day": {
+    "month": "June",
+    "from": "6",
+    "to": "6"
+  },
+  "Sickle cell disease": {
+    "month": "June",
+    "from": "19",
+    "to": "19"
+  },
+  "Myasthenia gravis month": {
+    "month": "June",
+    "from": "1",
+    "to": "30"
+  },
+  "PTSD Awareness Month": {
+    "month": "June",
+    "from": "1",
+    "to": "30"
+  },
+  "Sjögren syndrome": {
+    "month": "July",
+    "from": "23",
+    "to": "23"
+  },
+  "leiomyosarcoma awareness day": {
+    "month": "July",
+    "from": "25",
+    "to": "25"
+  },
+  "world hepatitis day": {
+    "month": "July",
+    "from": "28",
+    "to": "28"
+  },
+  "World Breastfeeding Week": {
+    "month": "August",
+    "from": "1",
+    "to": "7"
+  },
+  "National Immunization Awareness Month": {
+    "month": "August",
+    "from": "1",
+    "to": "31"
+  },
+  "Gastroparesis": {
+    "month": "August",
+    "from": "1",
+    "to": "31"
+  },
+  "Suicide Prevention Week": {
+    "month": "September",
+    "from": "8",
+    "to": "14"
+  },
+  "World Alzheimer's Day": {
+    "month": "September",
+    "from": "21",
+    "to": "21"
+  },
+  "World Heart Day": {
+    "month": "September",
+    "from": "29",
+    "to": "29"
+  },
+  "World Alzheimer's Month": {
+    "month": "September",
+    "from": "1",
+    "to": "30"
+  },
+  "Childhood Cancer Awareness Month": {
+    "month": "September",
+    "from": "1",
+    "to": "30"
+  },
+  "Leukemia Awareness Month": {
+    "month": "September",
+    "from": "1",
+    "to": "30"
+  },
+  "Gynecologic Cancer Awareness Month": {
+    "month": "September",
+    "from": "1",
+    "to": "30"
+  },
+  "Lymphoma Awareness Month": {
+    "month": "September",
+    "from": "1",
+    "to": "30"
+  },
+  "Sickle Cell Awareness Month": {
+    "month": "September",
+    "from": "1",
+    "to": "30"
+  },
+  "Deaf Awareness Month": {
+    "month": "September",
+    "from": "1",
+    "to": "30"
+  },
+  "Ovarian Cancer Awareness Month": {
+    "month": "September",
+    "from": "1",
+    "to": "30"
+  },
+  "Prostate Cancer Awareness Month": {
+    "month": "September",
+    "from": "1",
+    "to": "30"
+  },
+  "Spinal Cord Injury Awareness Month": {
+    "month": "September",
+    "from": "1",
+    "to": "30"
+  },
+  "National Alopecia Awareness Month": {
+    "month": "September",
+    "from": "1",
+    "to": "30"
+  },
+  "Thyroid Cancer Awareness Month": {
+    "month": "September",
+    "from": "1",
+    "to": "30"
+  },
+  "Chiari Malformation Awareness Month": {
+    "month": "September",
+    "from": "1",
+    "to": "30"
+  },
+  "Reactive arthritis": {
+    "month": "October",
+    "from": "12",
+    "to": "12"
+  },
+  "Male Breast Cancer Awareness Week": {
+    "month": "October",
+    "from": "17",
+    "to": "23"
+  },
+  "Invisible Disabilities Awareness Week": {
+    "month": "October",
+    "from": "20",
+    "to": "26"
+  },
+  "Breast Cancer Awareness Month": {
+    "month": "October",
+    "from": "1",
+    "to": "31"
+  },
+  "Pregnancy & Infant Loss Awareness Month": {
+    "month": "October",
+    "from": "1",
+    "to": "31"
+  },
+  "Liver Cancer Awareness Month": {
+    "month": "October",
+    "from": "1",
+    "to": "31"
+  },
+  "Sudden Infant Death Syndrome Awareness Month": {
+    "month": "October",
+    "from": "1",
+    "to": "31"
+  },
+  "brain tumor": {
+    "month": "October",
+    "from": "25",
+    "to": "31"
+  },
+  "Chronic Obstructive Pulmonary Disease COPD": {
+    "month": "November",
+    "from": "15",
+    "to": "15"
+  },
+  "cervical elimination day of action": {
+    "month": "November",
+    "from": "17",
+    "to": "17"
+  },
+  "antimicrobial awareness week": {
+    "month": "November",
+    "from": "18",
+    "to": "24"
+  },
+  "Down Syndrome Awareness Month": {
+    "month": "November",
+    "from": "1",
+    "to": "30"
+  },
+  "Alzheimer's Disease Awareness Month": {
+    "month": "November",
+    "from": "1",
+    "to": "30"
+  },
+  "Epilepsy Awareness Month": {
+    "month": "November",
+    "from": "1",
+    "to": "30"
+  },
+  "Lung Cancer Awareness Month": {
+    "month": "November",
+    "from": "1",
+    "to": "30"
+  },
+  "Pancreatic Cancer Awareness Month": {
+    "month": "November",
+    "from": "1",
+    "to": "30"
+  },
+  "Diabetic Eye Disease Awareness Month": {
+    "month": "November",
+    "from": "1",
+    "to": "30"
+  },
+  "Stomach Cancer Awareness Month": {
+    "month": "November",
+    "from": "1",
+    "to": "30"
+  },
+  "Carcinoid Cancer Awareness Month": {
+    "month": "November",
+    "from": "1",
+    "to": "30"
+  },
+  "prostate cancer, testicular cancer, and mental health": {
+    "month": "November",
+    "from": "1",
+    "to": "30"
+  },
+  "world AIDS day": {
+    "month": "December",
+    "from": "1",
+    "to": "1"
+  },
+  "international day of persons with disabilities": {
+    "month": "December",
+    "from": "3",
+    "to": "3"
+  }
+}
