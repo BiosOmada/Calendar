@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bios Omáda</title>
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+        }
+        #logo {
+            text-align: center;
+            padding: 20px;
+        }
+        #logo img {
+            width: 180px;
+        }
+        #calendar {
+            max-width: 85%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            border-top: 8px solid #2ca4dd;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+        .modal-content {
+            background-color: #fff;
+            margin: 15% auto;
+            padding: 20px;
+            border-radius: 10px;
+            width: 50%;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+        .close-btn {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .close-btn:hover,
+        .close-btn:focus {
+            color: #000;
+        }
+        .fc-toolbar-title {
+            font-size: 28px;
+            color: #2ca4dd;
+            letter-spacing: 1px;
+        }
+        .fc-daygrid-day-number {
+            color: #555;
+            font-weight: bold;
+        }
+        .fc-event {
+            background-color: rgb(190, 202, 18) !important;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            padding: 5px 10px;
+            text-align: center;
+            width: auto;
+            height: auto;
+            line-height: normal;
+            color: #ffffff !important;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+            white-space: normal !important;
+        }
+        .fc-event:hover {
+            transform: scale(1.05);
+        }
+        .fc-button-primary {
+            background-color: #2ca4dd;
+            border-color: #2ca4dd;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="logo">
+        <img src="logo.png" alt="Bios Omáda Logo">
+    </div>
+    <div id="calendar"></div>
+
+    <!-- Modal for Event Details -->
+    <div id="event-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-dates"></p>
+            <p id="modal-description"></p>
+            <p id="modal-activities"></p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('calendar');
+            var modal = document.getElementById('event-modal');
+            var modalTitle = document.getElementById('modal-title');
+            var modalDates = document.getElementById('modal-dates');
+            var modalDescription = document.getElementById('modal-description');
+            var modalActivities = document.getElementById('modal-activities');
+            var closeBtn = document.querySelector('.close-btn');
+
+            const eventInfo = {
+                // "Cervical Health Awareness Month": {
+                //     description: "A month dedicated to raising awareness about cervical health and the importance of regular screenings.",
+                //     activities: "Bios Omáda hosts free cervical screening camps and distributes informational brochures."
+                // },
+                // "thyroid awareness month": {
+                //     description: "Focused on educating the public about thyroid diseases and their symptoms.",
+                //     activities: "Bios Omáda organizes webinars and awareness drives in local communities."
+                // }
+                "world leprosy day": {},
+                "Cervical Health Awareness Month": {},
+                "thyroid awareness month": {},
+                "Rheumatoid arthritis": {},
+                "World Cancer Day": {},
+                "World anemia awareness day": {},
+                "international childhood cancer awareness day": {},
+                "rare disease day": {},
+                "world hearing day": {},
+                "world glaucoma week": {},
+                "World Kidney Day": {},
+                "world TB day": {},
+                "Brain Injury Awareness Month": {},
+                "Blood Disorder Awareness Month": {},
+                "Colorectal Cancer Awareness Month": {},
+                "Kidney Cancer Awareness Month": {},
+                "Multiple Myeloma Awareness Month": {},
+                "Cerebral Palsy Awareness Month": {},
+                "Multiple Sclerosis Awareness Month": {},
+                "oral, head and neck awareness week": {},
+                "world hemophilia day": {},
+                "world immunization week": {},
+                "world malaria day": {},
+                "Parkinson's Disease Awareness Month": {},
+                "Esophageal Cancer Awareness Month": {},
+                "Testicular Cancer Awareness Month": {},
+                "Oral, Head and Neck Cancer Awareness Month": {},
+                "Systemic lupus erythematosus (lupus)": {},
+                "autoimune and autoinflammatory arthritis disease day": {},
+                "World Myopia Week": {},
+                "Multiple sclerosis day": {},
+                "world no tobacco day": {},
+                "National Arthritis Month": {},
+                "Asthma and Food Allergy Awareness Month": {},
+                "Brain Cancer/Tumor Action Month": {},
+                "Osteoporosis Awareness & Prevention Month": {},
+                "Melanoma Skin Cancer Awareness Month": {},
+                "Lupus Awareness Month": {},
+                "Stroke Awareness Month": {},
+                "Crohn's Disease & Colitis Awareness Month": {},
+                "Bladder Cancer Awareness Month": {},
+                "Tuberous Sclerosis Awareness Month": {},
+                "Celiac Disease Awareness Month": {},
+                "World Transplant Day": {},
+                "Sickle cell disease": {},
+                "Myasthenia gravis month": {},
+                "PTSD Awareness Month": {},
+                "Sjögren syndrome": {},
+                "leiomyosarcoma awareness day": {},
+                "world hepatitis day": {},
+                "World Breastfeeding Week": {},
+                "National Immunization Awareness Month": {},
+                "Gastroparesis": {},
+                "Suicide Prevention Week": {},
+                "World Alzheimer's Day": {},
+                "World Heart Day": {},
+                "World Alzheimer's Month": {},
+                "Childhood Cancer Awareness Month": {},
+                "Leukemia Awareness Month": {},
+                "Gynecologic Cancer Awareness Month": {},
+                "Lymphoma Awareness Month": {},
+                "Sickle Cell Awareness Month": {},
+                "Deaf Awareness Month": {},
+                "Ovarian Cancer Awareness Month": {},
+                "Prostate Cancer Awareness Month": {},
+                "Spinal Cord Injury Awareness Month": {},
+                "National Alopecia Awareness Month": {},
+                "Thyroid Cancer Awareness Month": {},
+                "Chiari Malformation Awareness Month": {},
+                "Reactive arthritis": {},
+                "Male Breast Cancer Awareness Week": {},
+                "Invisible Disabilities Awareness Week": {},
+                "Breast Cancer Awareness Month": {},
+                "Pregnancy & Infant Loss Awareness Month": {},
+                "Liver Cancer Awareness Month": {},
+                "Sudden Infant Death Syndrome Awareness Month": {},
+                "brain tumor": {},
+                "Chronic Obstructive Pulmonary Disease COPD": {},
+                "cervical elimination day of action": {},
+                "antimicrobial awareness week": {},
+                "Down Syndrome Awareness Month": {},
+                "Alzheimer's Disease Awareness Month": {},
+                "Epilepsy Awareness Month": {},
+                "Lung Cancer Awareness Month": {},
+                "Pancreatic Cancer Awareness Month": {},
+                "Diabetic Eye Disease Awareness Month": {},
+                "Stomach Cancer Awareness Month": {},
+                "Carcinoid Cancer Awareness Month": {},
+                "prostate cancer, testicular cancer, and mental health": {},
+                "world AIDS day": {},
+                "international day of persons with disabilities": {}
+            };
+
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                headerToolbar: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'dayGridMonth,timeGridWeek,timeGridDay'
+                },
+                events: [],
+                eventClick: function(info) {
+                    const eventName = info.event.title;
+                    if (eventInfo[eventName]) {
+                        modalTitle.textContent = eventName;
+                        modalDates.textContent = `From: ${info.event.start.toLocaleDateString()} To: ${info.event.end ? info.event.end.toLocaleDateString() : info.event.start.toLocaleDateString()}`;
+                        modalDescription.textContent = eventInfo[eventName].description;
+                        // modalActivities.textContent = "What Bios Omáda does: " + eventInfo[eventName].activities;
+                        modal.style.display = 'block';
+                    }
+                }
+            });
+
+            closeBtn.onclick = function() {
+                modal.style.display = 'none';
+            }
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = 'none';
+                }
+            }
+
+            fetch('events.json')
+                .then(response => response.json())
+                .then(data => {
+                    const events = [];
+                    Object.keys(data).forEach(eventName => {
+                        const event = data[eventName];
+                        const monthIndex = new Date(`${event.month} 1, 2023`).getMonth();
+                        const year = new Date().getFullYear();
+                        const fromDate = new Date(year, monthIndex, parseInt(event.from) + 1);
+                        const toDate = new Date(year, monthIndex, parseInt(event.to));
+
+                        events.push({
+                            title: eventName,
+                            start: fromDate.toISOString().split('T')[0],
+                            end: toDate.toISOString().split('T')[0]
+                        });
+                    });
+                    calendar.addEventSource(events);
+                });
+            calendar.render();
+        });
+    </script>
+</body>
+</html>
