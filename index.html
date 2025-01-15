@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bios Omáda Calendar</title>
+    <title>Bios Omáda</title>
     <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css" rel="stylesheet">
     <style>
         body {
@@ -234,7 +234,7 @@
                     const eventName = info.event.title;
                     if (eventInfo[eventName]) {
                         modalTitle.textContent = eventName;
-                        modalDates.textContent = From: ${info.event.start.toLocaleDateString()} To: ${info.event.end ? info.event.end.toLocaleDateString() : info.event.start.toLocaleDateString()};
+                        modalDates.textContent = `From: ${info.event.start.toLocaleDateString()} To: ${info.event.end ? info.event.end.toLocaleDateString() : info.event.start.toLocaleDateString()}`;
                         modalDescription.textContent = eventInfo[eventName].description;
                         // modalActivities.textContent = "What Bios Omáda does: " + eventInfo[eventName].activities;
                         modal.style.display = 'block';
@@ -257,7 +257,7 @@
                     const events = [];
                     Object.keys(data).forEach(eventName => {
                         const event = data[eventName];
-                        const monthIndex = new Date(${event.month} 1, 2023).getMonth();
+                        const monthIndex = new Date(`${event.month} 1, 2023`).getMonth();
                         const year = new Date().getFullYear();
                         const fromDate = new Date(year, monthIndex, parseInt(event.from) + 1);
                         const toDate = new Date(year, monthIndex, parseInt(event.to));
